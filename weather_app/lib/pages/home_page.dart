@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
+import 'package:weather_app/current/models/current_weather.dart';
 
 void main() {
   runApp(const MyApp());
+  String city = 'Bialystok';
+  fetchWeatherData(city);
 }
 
 class MyApp extends StatelessWidget {
